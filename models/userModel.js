@@ -13,17 +13,19 @@ const userSchema = new mongoose.Schema({
         type : String,
         required : true 
     },
-    github :{
+    nickName :{
         type : String,
-        
     },
-    linkedin :{
-        type : String,
-       
+    phoneNum :{
+        type : String, 
     },
     profilePic :{
+        type : String, 
+    },
+    role:{
         type : String,
-        
+        required : true,
+        default:"user"
     }
 })
 
